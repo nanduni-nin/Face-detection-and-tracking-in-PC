@@ -1,0 +1,78 @@
+function rt=divideToPatches(data,patchNum)
+
+%==========================================================================
+%  This function breaks the image into patches of specified size
+%
+%     Usage:
+%        rt=divideToPatches(data,patchNum)
+%
+%     Inputs:
+%     - im: an image containing one or more faces
+%     - faceCords is a 4 by N matrix where N is the number of faces found by the face detector.
+%       each column faceCords is a 4 x1 vector containing center X coordinate, center Y
+%       cooridnate, radius and orientation of the center point.  
+%
+%     Output:
+%     - imNew: 
+%==========================================================================
+
+% 1)this function breaks the image into patches of specified size and for each
+%patch region collect patches of all training images and creates the patch library
+%initialize
+
+%dimensions of the trainings images
+[x y] = size(data);
+
+
+%dimensions of the patch
+nPatchX=x/patchNum;
+nPatchY=y/patchNum;
+%nPatchZ=z/patchNum;
+
+trainPatch=zeros(patchNum*patchNum,nPatchX,nPatchY,n_data);
+
+if(patchNum==1)
+    patchDataset=data;
+    nX=size(data,1);
+    nY=size(data,2);
+
+    save ([destinationDir 'patch' num2str(patchNum) 'by' num2str(patchNum) name '.mat'],'patchDataset');
+    %save the size of the image and number of the patches for later use
+    save ([destinationDir 'patchInfo' num2str(patchNum) '.mat'], 'nX','nY','patchNum');
+
+else
+    %divide each sample in training set into patches
+    if(pad_flag)
+        padX=ones(x,pad_size)*127;
+        padY=ones(pad_size,y+pad_size)*127;
+        im=[im padX];
+        im=[im;padY];
+        %dimensions of the patch
+        nPatchX=(x+pad_size)/patchNum;
+        nPatchY=(y+pad_size)/patchNum;
+    end
+    pCount=0;
+    for (i=1:nPatchX:x)
+        for(j=1:nPatchY:y)
+            pCount=pCount+1;
+
+            %collect this patch for all training samples
+            p=data(i:i+nPatchX-1,j:j+nPatchY-1,:);
+            trainPatch(pCount,:,:,:)=p;
+        end
+    end
+
+
+    %final size of image after padded
+    nX=size(data,1);
+    nY=size(data,2);
+
+    %save the size of the image and number of the patches for later use
+    %save ([destinationDir 'patchInfo' num2str(patchNum) '.mat'], 'nX','nY','patchNum');
+
+    patchDataset=trainPatch;
+    %save ([destinationDir
+    %save ([destinationDir 'patch' num2str(patchNum) 'by' num2str(patchNum) name '.mat'],'patchDataset','ratings');
+end
+
+rt=patchDataset;

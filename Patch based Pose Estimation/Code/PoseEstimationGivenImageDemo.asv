@@ -1,0 +1,28 @@
+function estPose=PoseEstimationGivenImageDemo()
+
+
+%% Initialization
+Fx='RBF9D'; % the size of the RBF function e.g. RBF5D, RBF9D, RBF17D
+NPatch=100; % the number of the patches in the grid.  Keep it fixed at 10x10 grid i.e. NPatch=100
+sd=45;      % standard deviation of the RBF functions,  can try 11.25,45 or 90.
+
+%read the image
+im1=imread('Aaron_Guiel_0001.jpg');
+im1=imresize(im1,[60,60]);
+
+%preprocess
+im2=preprocess2Im(im1);
+
+
+%divide to patches
+rt=divideToPatches(im2,10);
+
+%load the library
+load('Mat Data\libraryFaceDetector240Preproc2Auto.mat','library');
+sdiv=0.5; % standard deviation for mapping to the library.  Keep this fixed at 0.5 to be consistent with training
+
+%find where maps to the library
+libMap=findLogProbMap(rt,library,sdiv);
+
+%Estimate pose for this image
+estPose=testRegressionGivenImageManyRatings(libMap,Fx,NPatch,sd);
