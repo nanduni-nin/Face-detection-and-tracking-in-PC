@@ -1,0 +1,32 @@
+E:\FYP\WpfFaceDetectionTest\bin\Debug\WpfFaceDetectionTest.exe
+E:\FYP\WpfFaceDetectionTest\bin\Debug\WpfFaceDetectionTest.pdb
+E:\FYP\WpfFaceDetectionTest\bin\Debug\ZedGraph.dll
+E:\FYP\WpfFaceDetectionTest\bin\Debug\Emgu.CV.xml
+E:\FYP\WpfFaceDetectionTest\bin\Debug\Emgu.CV.UI.xml
+E:\FYP\WpfFaceDetectionTest\bin\Debug\Emgu.Util.xml
+E:\FYP\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest.csprojResolveAssemblyReference.cache
+E:\FYP\WpfFaceDetectionTest\obj\x86\Debug\MainWindow.baml
+E:\FYP\WpfFaceDetectionTest\obj\x86\Debug\MainWindow.g.cs
+E:\FYP\WpfFaceDetectionTest\obj\x86\Debug\App.g.cs
+E:\FYP\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest_MarkupCompile.cache
+E:\FYP\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest.g.resources
+E:\FYP\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest.Properties.Resources.resources
+E:\FYP\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest.csproj.GenerateResource.Cache
+E:\FYP\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest.exe
+E:\FYP\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest.pdb
+E:\FYP\EMGU CV\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest.exe
+E:\FYP\EMGU CV\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest.pdb
+E:\FYP\EMGU CV\WpfFaceDetectionTest\bin\Debug\WpfFaceDetectionTest.exe
+E:\FYP\EMGU CV\WpfFaceDetectionTest\bin\Debug\WpfFaceDetectionTest.pdb
+E:\FYP\EMGU CV\WpfFaceDetectionTest\bin\Debug\ZedGraph.dll
+E:\FYP\EMGU CV\WpfFaceDetectionTest\bin\Debug\Emgu.CV.xml
+E:\FYP\EMGU CV\WpfFaceDetectionTest\bin\Debug\Emgu.CV.UI.xml
+E:\FYP\EMGU CV\WpfFaceDetectionTest\bin\Debug\Emgu.Util.xml
+E:\FYP\EMGU CV\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest.csprojResolveAssemblyReference.cache
+E:\FYP\EMGU CV\WpfFaceDetectionTest\obj\x86\Debug\MainWindow.baml
+E:\FYP\EMGU CV\WpfFaceDetectionTest\obj\x86\Debug\MainWindow.g.cs
+E:\FYP\EMGU CV\WpfFaceDetectionTest\obj\x86\Debug\App.g.cs
+E:\FYP\EMGU CV\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest_MarkupCompile.cache
+E:\FYP\EMGU CV\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest.g.resources
+E:\FYP\EMGU CV\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest.Properties.Resources.resources
+E:\FYP\EMGU CV\WpfFaceDetectionTest\obj\x86\Debug\WpfFaceDetectionTest.csproj.GenerateResource.Cache
